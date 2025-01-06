@@ -1,0 +1,459 @@
+/* تنسيق النصوص العامة */
+body {
+    font-family: 'Cairo Play', Arial, Helvetica, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #FFF; /* إضافة خلفية */
+}
+
+/* تنسيق الرأس */
+header {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    background: transparent; /* استخدام transparent بدلاً من none */
+    font-size: 10px ;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* يمكنك ضبط الحجم حسب الحاجة */
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 35px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+    color: #f0ebeb;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 200ms;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* تنسيق الجداول */
+
+.table-section{
+    margin: 50px;
+}
+
+table {
+    width: 50%;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #000000;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* تنسيق الأزرار */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 300ms;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* إعداد الفيديو كخلفية للصفحة */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body, html {
+    height: 100%;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* إعداد خطوط Cairo Play */
+.cairo-play-regular {
+        font-family: "Amiri", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    
+.cairo-play-regular {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    /* margin-right: 20px; */
+    color: #ffffff;
+}
+
+.cairo-play-one{
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 25px;
+    /* margin-right: 75px; */
+    color: #ffffff;
+}
+
+.cairo-play-one {
+        font-family: "Noto Nastaliq Urdu", serif;
+        font-optical-sizing: auto;
+        font-weight: 50px;
+        font-style: normal;
+      
+}
+
+/* تنسيق قسم رابط الموقع */
+#website-link {
+ text-align: center;   
+ float: right;
+}
+#website-link {
+    margin-top: 20px; /* زيادة المسافة بين الجدول والرابط */
+    color: #007bff;
+    margin-right: 23%;
+    margin-top: 3%;
+}
+
+#website-link a {
+    color: #ff4500; /* اللون البرتقالي للرابط */
+    transition-duration: 300ms;
+}
+
+#website-link a:hover {
+    color: #0056b3; /* اللون الأزرق عند التمرير */
+}
+
+/* تنسيق الجداول في صفحة books.html */
+.books-table {
+    width: 60%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white; /* خلفية بيضاء للجدول */
+    border: 1px solid #ddd; /* إضافة حدود للجدول */
+    border-radius: 10px; /* إضافة استدارة لحواف الجدول */
+    overflow: hidden; /* لمنع تجاوز المحتوى حدود الجدول */
+    margin-top: 1%;
+    margin-right: 10%;
+}
+
+.books-table th, .books-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* إضافة حدود للخلايا */
+    font-size: 16px;
+    background-color: white; /* خلفية بيضاء للخلايا */
+    color: #555; /* لون النص */
+}
+
+.books-table th {
+    background-color: white; /* خلفية بيضاء لرؤوس الأعمدة */
+    color: #333; /* لون النص لرؤوس الأعمدة */
+    border-radius: 10px 10px 0 0; /* استدارة الحواف العلوية */
+}
+/* التحكم بحجم الصور داخل الجدول */
+.books-table img {
+    width: 100px;
+    height: auto;
+}
+
+/* تنسيق خانة ألف ليلة وليلة */
+#details-1 {
+    position: relative;
+    padding: 20px;
+}
+
+.story-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.story-titles .right, .story-titles .center, .story-titles .left {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.book-cover-right, .book-cover-center, .book-cover-left {
+    width: 100px;
+    display: block;
+    margin: 5px auto;
+}
+
+.details {
+    display: none;
+}
+
+/* تأكيد ظهور دولاب التمرير للقسم المحدد */
+#books {
+    overflow: auto;
+    max-height: 80vh;
+    padding: 10px;
+    border: none; /* إزالة إطار القسم */
+    background-color: transparent; /* إزالة الخلفية */
+}
+
+/* تنسيق النموذج */
+#form-container {
+    width: 50%; /* تقليل العرض إلى 50% */
+    margin-top: 20px;
+    padding: 10px; /* تقليل المساحة الداخلية */
+    border: 1px solid #161515;
+    background-color: rgba(255, 255, 255, 0.1); /* لون خلفية فاتح بشفافية */
+    border-radius: 5px;
+    margin-right: 17%; /* محاذاة النموذج في المنتصف */
+    text-align: center; /* محاذاة النص في المنتصف */
+    font-size: 12px;
+}
+/* تغيير لون الخط في النموذج */
+#form-container label, #form-container input, #form-container button {
+    color: #ffffff; /* لون النص */
+}
+
+#customer-form {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+#customer-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#customer-form input {
+    width: 80%; /* تقليل العرض إلى 80% */
+    padding: 5px; /* تقليل المساحة الداخلية */
+    margin-bottom: 8px; /* تقليل المسافة السفلية */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* تقليل نصف القطر */
+    font-size: 14px; /* تقليل حجم الخط */
+    text-align: center; /* محاذاة النص في المنتصف */
+    color: #000;
+}
+
+#customer-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* تقليل حجم المساحة الداخلية */
+    cursor: pointer;
+    border-radius: 10px; /* تقليل نصف القطر */
+    transition: background-color 300ms;
+    font-size: 15px; /* تقليل حجم الخط */
+    width: auto;
+    height: auto;
+}
+
+#customer-form button:hover {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 20px 30px; /* تقليل حجم المساحة الداخلية */
+    cursor: pointer;
+    border-radius: 10px; /* تقليل نصف القطر */
+    transition: background-color 300ms;
+    font-size: 20px; /* تقليل حجم الخط */
+    width: auto;
+    height: auto;
+}
+/* تنسيق مربعات الاختيار */
+.books-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* إعداد الفيديو كخلفية للصفحة */
+#background-video-book {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يغطي المحتوى بالكامل مع الحفاظ على نسبة العرض إلى الارتفاع */
+    z-index: -1; /* يضع الفيديو في الخلفية */
+    pointer-events: none; /* يمنع التفاعل مع الفيديو */
+    transform: translateZ(0); /* يحسن الأداء ويضمن عدم اختفاء الفيديو */
+}
+
+/* تنسيق الزر */
+#continue-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* تقليل حجم المساحة الداخلية */
+    cursor: pointer;
+    border-radius: 10px; /* تقليل نصف القطر */
+    transition: background-color 300ms;
+    font-size: 15px; /* تقليل حجم الخط */
+    width: auto;
+    height: auto;
+    margin-right: 40%;
+}
+
+#continue-button:hover {
+    background-color: #0056b3;
+}
+
+/* تغيير لون عبارة الكتب المتوفرة إلى الأبيض */
+header h1 {
+    color: white; /* تغيير اللون إلى الأبيض */
+}
+
+#background-video-1 {
+    position: fixed; /* تثبيت الفيديو في الخلفية */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطية كامل الخلفية بالفيديو */
+    z-index: -1; /* وضع الفيديو خلف العناصر الأخرى */
+    pointer-events: none; /* منع التفاعل مع الفيديو */
+}
+
+
+/* تنسيق دولاب التمرير */
+.scroll-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* خلفية بيضاء شفافة قليلاً */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* ظل خفيف للصندوق */
+    width: 200px;
+    flex: 0 0 auto; /* لضمان نفس الحجم لكل المستطيلات وعدم التمدد */
+    text-align: center;
+}
+
+p.library-description {
+    font-size: 25px; /* حجم الخط */
+    text-align: center; /* توسيط النص */
+    margin-top: 20px; /* المسافة العلوية للنص */
+    margin-bottom: 20px; /* المسافة السفلية للنص */
+    color: white; /* لون النص */
+}
+
+
+
+
+/* تحسين النصوص داخل المستطيلات */
+.container h3, .container p, .container ul {
+    font-size: 16px; /* حجم الخط */
+    color: #ffffff;
+}
+
+.container ul {
+    padding-left: 15px; /* إضافة حشوة لليسار للقوائم */
+    font-size: medium;
+}
+
+/* تحسين النصوص أسفل العناوين */
+#skills p, #vision p, #mission p, #values p {
+    font-size: 10px; /* حجم الخط للنصوص */
+    color: #ffffff;
+}
+.container h3, .container p, .container li {
+    font-size: 16px; /* تقليل حجم الخط */
+    color: #ffffff; /* لون النص الأسود */
+}
+h3{
+    display: block;
+    font-size: 15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #ffffff;
+    text-align: center;
+}
+/* تنسيقات مخصصة للعبارات */
+p.address {
+    font-size: 14px; /* حجم الخط للعبارة "العنوان" */
+    margin: 10px;    /* الهامش للعبارة "العنوان" */
+    color: #ffffff;
+}
+
+p.phone {
+    font-size: 14px; /* حجم الخط للعبارة "الهاتف" */
+    margin: 10px;    /* الهامش للعبارة "الهاتف" */
+    color: #ffffff;
+}
+
+p.email {
+    font-size: 14px; /* حجم الخط للعبارة "البريد الالكتروني" */
+    margin: 10px;    /* الهامش للعبارة "البريد الالكتروني" */
+    color: #ffffff;
+}
+
+/* تنسيق تفاصيل الاتصال */
+.contact-details {
+    display: flex; /* عرض كخط مرن */
+    justify-content: center; /* توسيط العناصر أفقيًا */
+    gap: 100px; /* مسافة بين العناصر */
+}
+
+.contact-details p {
+    margin: 10px 0; /* تقليل الهوامش العلوية والسفلية */
+}
+

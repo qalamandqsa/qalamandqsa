@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunction.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="video/vido.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+        <img src="imag/logo2.png" alt="Library Logo" class="logo">
+        <h1>الكتب المتوفرة</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="books.html">الكتب</a></li>
+                <li><a href="about.html">من نحن</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="books">
+            <table class="books-table">
+                <thead>
+                    <tr>
+                        <th>رمز الكتاب ISBN</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>978-9770916738</td>
+                        <td>ألف ليلة وليلة</td>
+                        <td>25000 ل.س</td>
+                        <td><button onclick="toggleDetails(1)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="ألف ليلة وليلة"></td>
+                    </tr>
+                    <tr id="details-1" class="details">
+                        <td colspan="5">
+                            <p>الناشر: دار المعارف<br>التصنيف: قصص شعبية<br> كتاب أسطوري يضم مجموعة من القصص الشعبية من الشرق الأوسط وجنوب آسيا وشمال إفريقيا تم جمعها خلال العصر الذهبي للإسلام. يتم سرد القصص ضمن إطار قصة مركزية تتضمن الشخصية الرئيسية، شهرزاد، التي تحكي حكايات للملك شهر يار لتأجيل إعدامها.</p>
+                            <p><strong>أهم القصص:</strong></p>
+                            <div class="story-titles">
+                                <div class="right">
+                                    علاء الدين والمصباح السحري
+                                    <img src="imag/path_to_image.png" alt="ألف ليلة وليلة" class="book-cover-right">
+                                </div>
+                                <div class="center">
+                                    علي بابا والأربعون لصًا
+                                    <img src="imag/Screenshot_9.png" alt="ألف ليلة وليلة" class="book-cover-center">
+                                </div>
+                                <div class="left">
+                                    رحلات السندباد البحري
+                                    <img src="imag/Screenshot_10.png" alt="ألف ليلة وليلة" class="book-cover-left">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-9953891718</td>
+                        <td>موسم الهجرة إلى الشمال</td>
+                        <td>12000 ل.س</td>
+                        <td><button onclick="toggleDetails(2)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="موسم الهجرة إلى الشمال"></td>
+                    </tr>
+                    <tr id="details-2" class="details">
+                        <td colspan="5">
+                            <img src="imag/مواسم الهجرة الى الشمال.png" alt="موسم الهجرة إلى الشمال" class="book-cover-center">
+                            <p>الناشر: دار العين للنشر<br>التصنيف: الأدب والشعر<br>هي رواية كتبها الطيب صالح ونشرت في البداية في مجلة حوار (ع 5-6، ص 5-87) في أيلول/سبتمبر 1966، ثم نشرت بعد ذلك في كتاب مستقل عن دار العودة في بيروت في نفس العام. في هذه الرواية يزور مصطفى سعيد، وهو طالب عربي، الغرب. مصطفى يصل من الجنوب، من إفريقيا، بعيدًا عن الثقافة الغربية إلى الغرب بصفة طالب. يحصل على وظيفة كمحاضر في إحدى الجامعات البريطانية ويتبنى قيم المجتمع البريطاني، وهناك يتعرف إلى زوجته، جين موريس، وهي امرأة بريطانية ترفض قبول إملاءات زوجها. بعد أعوام يعود مصطفى إلى بلاده، حيث يلتقي هناك بصورة مفاجئة براوي القصة الذي عاش أيضًا في بريطانيا. القصة نفسها تروى عن طريق قصص يرويها الراوي والبطل.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-9953451080</td>
+                        <td>الخبز الحافي</td>
+                        <td>10000 ل.س</td>
+                        <td><button onclick="toggleDetails(3)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="الخبز الحافي"></td>
+                    </tr>
+                    <tr id="details-3" class="details">
+                        <td colspan="5">
+                            <img src="imag/الخبز الحافي.png" alt="الخبز الحافي" class="book-cover-center">
+                            <p>الناشر: دار الساقي للطباعة <br>التصنيف: الأدب السيري والتاريخي <br>الخبز الحافي هي رواية تعدّ من أشهر الكتب الأدبية للكاتب محمد شكري، وأكثرها جدلاً. كتبت بالعربية سنة 1972 وترجمها إلى الإنجليزية بول بولز سنة 1973، وترجمها إلى الفرنسية الطاهر بنجلون سنة 1981، ولم تنشر بالعربية حتى سنة 1982 بسبب ما أثارته من جدل حول جرأتها غير المألوفة. ترجمت الرواية إلى تسع وثلاثين لغة أجنبية.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-9953891790</td>
+                        <td>الرياضيات و فلسفتها عند العرب</td>
+                        <td>40000 ل.س</td>
+                        <td><button onclick="toggleDetails(4)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="الرياضيات و فلسفتها عند العرب"></td>
+                    </tr>
+                    <tr id="details-4" class="details">
+                        <td colspan="5">
+                            <img src="imag/كتاب الرياضيات و فلسفتها عند العرب.png" alt="الرياضيات و فلسفتها عند العرب" class="book-cover-center">
+                            <p>الناشر: مؤسسة هنداوي <br>المؤلف رشدي راشد<br>يتناول هذا الكتاب قضيةً رياضية ذات بُعد فلسفي عميق كان لعلماء الحضارة الإسلامية إسهامٌ بارز فيها، وهي القضية التي تتمحور حول مسألة الخط المقارِب؛ ذاك الخط الذي يتقارب من المنحنى تقارُبًا مستمرًّا بحيث تَئول المسافة بينهما إلى الصفر عند اللانهاية، مثيرًا بذلك مسألة اللاتناهي. وقد تطرَّق لهذه القضية اثنان من علماء المسلمين هما: «السِّجزي» أحد علماء القرن الرابع الهجري، الذي اشتغل بالهندسة، ونظر إلى مسألة الخط المقارِب وقضية اللاتناهي من زاويةٍ أعمق؛ هي الفجوة بين الاستعداد لتصويرِ خاصيةٍ ما، والقدرة على البرهنة عليها أو تأسيسها تأسيسًا مُحكَمًا. أما العالِم الثاني فهو «موسى بن ميمون» طبيب «صلاح الدين الأيوبي»، الذي أثار أيضًا هذه القضية من زاوية الخيال والعقل.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-9776263253</td>
+                        <td>كتاب روعة الكيمياء</td>
+                        <td>30000 ل.س</td>
+                        <td><button onclick="toggleDetails(5)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="كتاب روعة الكيمياء"></td>
+                    </tr>
+                    <tr id="details-5" class="details">
+                        <td colspan="5">
+                            <img src="imag/مكتاب روعة الكيمياء.png" alt="كتاب روعة الكيمياء" class="book-cover-center">
+                            <p>الناشر: مؤسسة هنداوي <br>المؤلف كاثي كوب <br>يتحدى هذا الكتاب النظرة السائدة إلى الكيمياء على أنها علم صعب يثير النفور، وجاف إلى درجة تحول دون الاستمتاع به. ففي هذا الكتاب، يقدم المؤلفان للقارئ سحر الكيمياء وجمالها وروعتها؛ إذ يستخدمان مواد مألوفة لنا لتوضيح مفاهيم الكيمياء بلغة الحياة اليومية، بدءًا من تغير ألوان أوراق الأشجار في الخريف، مرورًا بالألعاب النارية، وطريقة عمل كاشف الدخان والحاسبات الآلية.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9789960556123</td>
+                        <td>كتاب علم الأحياء الدقيقة</td>
+                        <td>30000 ل.س</td>
+                        <td><button onclick="toggleDetails(6)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="كتاب علم الأحياء الدقيقة"></td>
+                    </tr>
+                    <tr id="details-6" class="details">
+                        <td colspan="5">
+                            <img src="imag/كتاب علم الاحياء الدقيقة.png" alt="كتاب علم الأحياء الدقيقة" class="book-cover-center">
+                            <p>الناشر: مؤسسة هنداوي <br>المؤلف نيكولاس بي موني <br>في العقود الأخيرة بدأنا نُدرك أن عالَم الميكروبات شديدُ التنوُّع، وأن الميكروبات يُمكِن أن توجد في أقسى البيئات، وأن عددَ الفُطْريات، والطَّلائعيات الوحيدة الخلية، والبكتيريا، والعتائق، والفيروسات، والجُسَيمات شِبه الفيروسية؛ يَفُوق عددَ النباتات والحيوانات بفارقٍ شاسع. وبِتنا اليومَ نعرف أن الميكروبات تلعب دورًا محوريًّا في الأنظمة البيئية، وفي كيمياء الغِلاف الجوي والمحيطات، وداخل أجسامنا. أصبح علمُ الأحياء الدقيقة، المدعَّم بتقنيات حديثة مُستمَدَّة من علم الأحياء الجزيئي، من أسرع فروع العلم نموًّا ونشاطًا.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9789776960596</td>
+                        <td>البؤساء</td>
+                        <td>60000 ل.س</td>
+                        <td><button onclick="toggleDetails(7)">إظهار التفاصيل</button></td>
+                        <td><input type="checkbox" name="select-book" value="البؤساء"></td>
+                    </tr>
+                    <tr id="details-7" class="details">
+                        <td colspan="5">
+                          <img src="imag/البؤساء.png" alt="البؤساء" class="book-cover-center">
+                          <p>الناشر: دار العلم للملايين <br>المؤلف فيكتور هوجو<br>تدور أحداث الرواية عن الحياة الاجتماعية البائسة التي عاشها الفرنسيون بعد سقوط نابليون في عام 1815 والثورة التي حكم عليها بالفشل ضد الملك لويس فيليب في عام 1832، حيث يصور الكاتب المعاناة التي عاشها الفرنسيون من خلال شخصية جان فالجان الذي عانى مرارة السجن وعانى أيضًا بعد خروجه منه.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="continue-button" onclick="toggleForm()">متابعة</button>
+            <!-- نموذج المعلومات مخفي افتراضيًا -->
+            <div id="form-container" style="display: none;">
+                <form id="customer-form" onsubmit="submitForm(event)">
+                    <label for="full-name">الاسم الكامل:</label>
+                    <input type="text" id="full-name" name="full-name" pattern="[\u0600-\u06FF\s]+" title="الرجاء استخدام الأحرف الهجائية العربية فقط."><br>
+                    
+                    <label for="national-id">الرقم الوطني:</label>
+                    <input type="text" id="national-id" name="national-id" required pattern="\d{11}" title="الرقم الوطني يجب أن يحتوي على 11 خانة."><br>
+                    
+                    <label for="birth-date">تاريخ الميلاد:</label>
+                    <input type="text" id="birth-date" name="birth-date" pattern="\d{2}-\d{2}-\d{4}" title="صيغة التاريخ يجب أن تكون dd-mm-yyyy."><br>
+                    
+                    <label for="phone-number">رقم الموبايل:</label>
+                    <input type="text" id="phone-number" name="phone-number" pattern="(09[3-9]\d{7})" title="الرجاء إدخال رقم موبايل صالح لشبكتي mtn أو syriatel."><br>
+
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required title="الرجاء إدخال بريد إلكتروني صالح."><br>
+                    
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
