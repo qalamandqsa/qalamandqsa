@@ -5,7 +5,6 @@ body {
     text-align: right;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background: #FFF; /* إضافة خلفية */
 }
 
@@ -139,7 +138,6 @@ header, main, footer {
     margin-top: 100px;
     font-weight: 400;
     font-size: 25px;
-    /* margin-right: 75px; */
     color: #ffffff;
 }
 
@@ -157,10 +155,8 @@ header, main, footer {
  float: right;
 }
 #website-link {
-    margin-top: 20px; /* زيادة المسافة بين الجدول والرابط */
     color: #007bff;
     margin-right: 23%;
-    margin-top: 3%;
 }
 
 #website-link a {
