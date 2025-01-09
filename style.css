@@ -61,7 +61,7 @@ nav ul li a:hover {
 /* تنسيق الجداول */
 
 .table-section{
-    margin: 50px;
+    margin: 40px;
 }
 
 table {
@@ -156,7 +156,7 @@ header, main, footer {
 }
 #website-link {
     color: #007bff;
-    margin-right: 23%;
+    margin-right: 18%;
 }
 
 #website-link a {
